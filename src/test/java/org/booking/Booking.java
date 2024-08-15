@@ -14,6 +14,7 @@ public class Booking {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		driver.findElement(By.id("email")).sendKeys("srinipmps@gmail.com");
 		driver.findElement(By.id("pass")).sendKeys("8@ndHEw5TfaLm5e");
+		driver.findElement(By.xpath("//button[text()='Login']")).click();
 	}
 
 }

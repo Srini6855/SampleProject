@@ -15,6 +15,8 @@ public class Booking {
 		driver.findElement(By.id("email")).sendKeys("srinipmps@gmail.com");
 		driver.findElement(By.id("pass")).sendKeys("8@ndHEw5TfaLm5e");
 		driver.findElement(By.xpath("//button[text()='Login']")).click();
+		System.out.println(driver.findElement(By.xpath("//a[@data-testid='username']")).getText());
+
 	}
 
 }
